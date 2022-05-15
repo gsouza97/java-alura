@@ -10,8 +10,8 @@ public class TestaBanco {
 
 	Conta conta = new Conta();
 	conta.depositar(100);
-	conta.titular = gabriel;
+	conta.setTitular(gabriel);
 
-	System.out.println(conta.titular.nome);
+	System.out.println(conta.getTitular().nome);
     }
 }
