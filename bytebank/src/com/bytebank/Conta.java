@@ -2,10 +2,18 @@ package com.bytebank;
 
 public class Conta {
 
-    private double saldo;
-    private int    agencia = 42;
-    private int    numero;
-    private Cliente titular;
+    private        double  saldo;
+    private        int     agencia = 42;
+    private        int     numero;
+    private        Cliente titular;
+    private static int     total;
+
+    public Conta(int agencia, int numero) {
+	total++;
+	System.out.println("O total de contas é: " + total);
+	this.agencia = agencia;
+	this.numero = numero;
+    }
 
     public void depositar(double valor) {
 	this.saldo += valor;
