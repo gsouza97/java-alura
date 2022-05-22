@@ -1,6 +1,9 @@
 public class TesteGerente {
 
     public static void main(String[] args) {
+
+	Gerente gerente = new Gerente();
+
         Gerente g1 = new Gerente();
 	g1.setNome("Gabriel");
 	g1.setSalario(5000);
